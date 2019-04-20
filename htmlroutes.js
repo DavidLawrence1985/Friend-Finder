@@ -3,11 +3,17 @@
 
 
 
-app.get("/survery", function(req, res){
-    res.sendfile(path.join(__dirname, "survery.html"));
-});
+
+module.exports = function(app) {
+
+    app.get("/survery", function(req, res){
+        res.sendfile(path.join(__dirname, "survery.html"));
+    });
 
 
-app.get("/", function(req, res) {
-    res.sendFile(path.join(__dirname, "home.html"));
-  });
+    app.get("/", function(req, res) {
+        res.sendFile(path.join(__dirname, "home.html"));
+    });
+
+   
+  };
