@@ -19,8 +19,8 @@
                     <hr class="my-4">
                     <p>answer to the best of your ability</p>
                     <a class="btn btn-primary btn-lg" href="/" role="button">Home</a>
+                    <a class="btn btn-primary btn-lg mybutton" href="" role="button">test</a>
             </div>
-
 
             <!-- form -->
             <form>
@@ -155,31 +155,56 @@
                 <a href="/api/friends">api</a>
         </div>
     </body>
+</html>    
     <script type="text/javascript">
+    $(".mybutton").on("click", function(){
+        console.log("test")
+        alert("test")
+    })
 
     $("#add").on("click", function(event) {
         event.preventDefault();
+        // alert("test")
             var newPerson = {
             
-            name:$("name").val().trim(),
-            photo:$("image").val().trim(),
+            name:$("#name").val().trim(),
+            photo:$("#image").val().trim(),
             score:[
-                $("quest1").val(),
-                $("quest2").val(),
-                $("quest3").val(),
-                $("quest4").val(),
-                $("quest5").val(),
-                $("quest6").val(),
-                $("quest7").val(),
-                $("quest8").val(),
-                $("quest9").val(),
-                $("quest10").val()
+                $("#quest1").val(),
+                $("#quest2").val(),
+                $("#quest3").val(),
+                $("#quest4").val(),
+                $("#quest5").val(),
+                $("#quest6").val(),
+                $("#quest7").val(),
+                $("#quest8").val(),
+                $("#quest9").val(),
+                $("#quest10").val()
             ]
-        }
-        console.log(newPerson)
+        };
+        console.log(newPerson);
 
-        $.post("/api/friends", newPerson)
+        $.post("/api/friends", newPerson,
+            function(data) {
+                if(data){
+                    alert("ok")
+                
+                $("#name").val("");
+                $("#image").val("");
+                $("#quest1").val();
+                $("#quest2").val();
+                $("#quest3").val();
+                $("#quest4").val();
+                $("#quest5").val();
+                $("#quest6").val();
+                $("#quest7").val();
+                $("#quest8").val();
+                $("#quest9").val();
+                $("#quest10").val();
+                
+                }
+
+            })
     })   
         
     </script>
-</html>
