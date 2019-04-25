@@ -55,7 +55,7 @@ module.exports = function(app){
         
                 // console.log(best);
                 
-                console.log("name: " + best.name + "\r\nimage: " + best.image );
+                console.log("name: " + best.name);
 
 
               res.json(best)
