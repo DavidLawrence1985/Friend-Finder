@@ -15,24 +15,27 @@
 
     <body>
         
-        <div class="container">
-            <div class="jumbotron">
-                    <h1 class="display-4">Survey</h1>
-                    <p class="lead">Comapatiblity quiz</p>
-                    <hr class="my-4">
-                    <p>answer to the best of your ability</p>
-                    <a class="btn btn-primary btn-lg" href="/" role="button">Home</a>
+            <div class="container">
+                    
+                        <div class="head">
+                            <!-- <img src="logo.png" alt="logo" id="logo">  -->
+                            <h1 class="display-4 myfont" id="title" >Survey</h1>
+                            <hr class="my-4 clearfix">    
+                            <p id="statement" class="myfont">Answer questions for your friend Match</p>
+                           
+                            <a class="btn btn-dark btn-lg mybutton" href="/" role="button">Home</a>
+                        
             </div>
 
             <!-- form -->
             <form>
                     <div class="form-group">
                     <label for="survey name">Name</label>
-                    <input type="text" class="form-control" id="name"  placeholder="Your Name">
+                    <input type="text" class="form-control form-box" id="name"  placeholder="Your Name">
                     </div>
                     <div class="form-group">
                     <label for="survey image">Image</label>
-                    <input type="text" class="form-control" id="image"  placeholder="link to your photo here">
+                    <input type="text" class="form-control form-box" id="image"  placeholder="link to your photo here">
                     </div>
                     
                     <label class="my-1 mr-2" for="inlineFormCustomSelectPref"></label>
@@ -273,3 +276,62 @@
 
         
     </script>
+
+<style>
+        /* #logo{
+            height: 100px;
+            width: auto;
+            float: left;
+        } */
+    
+        #title{
+            /* float:left; */
+            padding: 1rem;
+            font-size: 5rem;
+            
+    
+        }
+    
+        .clearfix {
+        content: "";
+        clear: both;
+        display: table;
+        }
+    
+        #statement{
+            font-size: 2.5rem;
+            
+    
+        }
+        
+        .head{
+            width: 70%;
+            margin:0 auto;
+            padding: 1rem;
+            border: 1px solid black;
+            border-radius: 1rem;
+            background: #007bff;
+            margin-bottom: 5rem;
+        }
+    
+        .mybutton{
+            /* width:50%; */
+            margin: 1rem auto;
+        }
+        .myfont{
+            font-family: 'Boogaloo', cursive;
+            
+        }
+        form{
+            font-family: 'Boogaloo', cursive;
+            font-size: 1rem;
+        }
+        .form-box{
+            width: 50%;
+        }
+        .custom-select{
+            width: 25%;
+        }
+       
+    
+    </style>

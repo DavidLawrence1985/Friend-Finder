@@ -1,0 +1,30 @@
+#logo{
+    height: 100px;
+    width: auto;
+    float: left;
+}
+
+#title{
+    float:left;
+    padding: 1rem;
+    font-size: 5rem;
+    font-family: 'Boogaloo', cursive;
+
+}
+
+.clearfix {
+content: "";
+clear: both;
+display: table;
+}
+
+#statement{
+    font-size: 2.5rem;
+    font-family: 'Boogaloo', cursive;
+
+}
+
+.head{
+    width: 50%;
+    margin:0 auto;
+}
