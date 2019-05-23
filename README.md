@@ -11,7 +11,11 @@
     - javaScript for friend matching logic
     - Bootsrap and CSS for basic styling purposes 
     - API use for displaying friend mathc
+## Screen Shots
+![home](/app/public/ff-home.png)    
+![survey](/app/public/survey-home.png)    
+![response](/app/public/ff-response.png)    
 
 ## Deployment 
     This web app is deployed using Heroku 
-            at https://peaceful-meadow-14475.herokuapp.com/    
+[deployed](https://peaceful-meadow-14475.herokuapp.com/)    
