@@ -13,7 +13,7 @@
     - API use for displaying friend mathc
 ## Screen Shots
 ![home](/app/public/ff-home.png)    
-![survey](/app/public/survey-home.png)    
+![survey](/app/public/ff-survey.png)    
 ![response](/app/public/ff-response.png)    
 
 ## Deployment 
